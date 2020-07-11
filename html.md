@@ -25,7 +25,7 @@
     * 속성
       - 필수 속성 없음
       - download: 사용자가 하이퍼링크를 클릭할 때 해당 대상(target)으로 연결되지 않고 대신 해당 콘텐츠가 다운로드됨을 명시, 반드시 href 속성이 설정되어 있어야만 사용가능
-        - |<a download="파일 이름"|> 다운로드되는 파일이름 명시, 생략가능
+        - \<a download="파일 이름"\> 다운로드되는 파일이름 명시, 생략가능
       - href: 이동하고자 하는 문서의 위치를 지정 (절대/상대주소)
       - rel:현재 문서와 링크된 문서 사이의 연관 관계를 명시
       - target: 링크를 클릭할 때 창을 어떻게 열지 설정
@@ -97,11 +97,11 @@
      - 검색 엔진을 위한 키워드 정의 예시:
        \<meta name="keyword" content="HTML, meta, tag, element, reference"\>
      - 웹 페이지에 대한 설명을 정의하는 예시:
-       |<meta name="description" content="HTML meta tag page"|>
+       \<meta name="description" content="HTML meta tag page"\>
 
 9. table / 자식요소: tr, th, td
    - table : table
    - tr: table-row
    - th, td: table-cell
    * table태그는 데이터를 포함한 셀들의 행과 열로 구성된 테이블 정의, tr은 테이블의 각 행을 정의, th는 각 열의 제목을 정의, td는 하나의 테이블 셀을 정의함
-   * caption,thead,tfoot,tbody요소 사용하여 테이블을 구분할 수 있음
+   * \<caption\>,\<thead\>,\<tfoot\>,\<tbody\>요소 사용하여 테이블을 구분할 수 있음
