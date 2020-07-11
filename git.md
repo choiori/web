@@ -4,7 +4,7 @@
 
 - **git init**: 저장소 생성
 - **git add (filename)**: 저장소에 파일 추가
-  - git \* -> 두 가지 이상의 변동 내용을 한번에 적용
+  - git add\* -> 두 가지 이상의 변동 내용을 한번에 적용
 - **git commit**: 저장소에 변경 내용을 반영
   - git add는 추가만 한 것임.(초록색 글씨로 표시) -> git commit으로 추가한 상태를 확정할 필요가 있음
 - **git status**: 저장소의 상태 확인
@@ -12,7 +12,9 @@
 - **git log**: 이제까지의 내역을 볼 수 있음
 - **gitk**: GUI로 한 눈에 쉽게 직관적으로 히스토리를 볼 수 있음
 
-#### branch 관리
+---
+
+### branch 관리
 
 - 혼자서는 master branch에서만 작업해도 괜찮지만, 동시에 여러사람들이 파일을 만들고 업데이트를 하는 상황이면 master에서만 작업하면 불편 -> 새로운 branch 만들어 작업하고 관리자는 merge하는 작업에 신경써야함
 
@@ -21,10 +23,12 @@
 - 처음은 master -> 내가 만든 branch로 switch하기 위해서는 **git checkout (branch명)**
 - **git branch -d (branch명)**: 해당 branch 삭제
 
-#### git과 github(원격저장소)
+---
+
+### git과 github(원격저장소)
 
 - **git remote**: 원격 저장소인 github을 관리할 수 있는 명령어
-  - git remote add origin http://github.com/[이름]/gitExample: github 주소를 등록
+  - git remote add origin http://github.com/[이름]/0000: github 주소를 등록
   - origin 이라는 이름을 사용하면 입력했던 저장소에 접속 가능
   - git remote remove origin: origin 원격저장소 삭제
 - **git clone**: github의 내용을 로컬저장소로 복제해서 가져옴
