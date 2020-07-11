@@ -28,7 +28,7 @@
 ### git과 github(원격저장소)
 
 - **git remote**: 원격 저장소인 github을 관리할 수 있는 명령어
-  - git remote add origin http://github.com/[이름]/0000: github 주소를 등록
+  - git remote add origin http://github.com/[이름]/0000
   - origin 이라는 이름을 사용하면 입력했던 저장소에 접속 가능
   - git remote remove origin: origin 원격저장소 삭제
 - **git clone**: github의 내용을 로컬저장소로 복제해서 가져옴
