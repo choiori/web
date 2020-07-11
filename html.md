@@ -95,7 +95,7 @@
      - name: 메타데이터를 위한 이름을 명시
      - content: name 속성이나 http-equiv 속성과 관련된 값을 명시
      - 검색 엔진을 위한 키워드 정의 예시:
-       |<meta name="keyword" content="HTML, meta, tag, element, reference"|>
+       \<meta name="keyword" content="HTML, meta, tag, element, reference"\>
      - 웹 페이지에 대한 설명을 정의하는 예시:
        |<meta name="description" content="HTML meta tag page"|>
 
