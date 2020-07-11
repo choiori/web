@@ -25,7 +25,7 @@
     * 속성
       - 필수 속성 없음
       - download: 사용자가 하이퍼링크를 클릭할 때 해당 대상(target)으로 연결되지 않고 대신 해당 콘텐츠가 다운로드됨을 명시, 반드시 href 속성이 설정되어 있어야만 사용가능
-        - <a download="파일 이름"> 다운로드되는 파일이름 명시, 생략가능
+        - |<a download="파일 이름"|> 다운로드되는 파일이름 명시, 생략가능
       - href: 이동하고자 하는 문서의 위치를 지정 (절대/상대주소)
       - rel:현재 문서와 링크된 문서 사이의 연관 관계를 명시
       - target: 링크를 클릭할 때 창을 어떻게 열지 설정
@@ -48,34 +48,34 @@
    - **ol, ul : block**
    - **li : list-item**
 
-   * 각 항목<li>의 정렬된 목록<ol: ordered list>이나 정렬되지 않은 목록<ul: unordered list>을 설정함
+   * 각 항목 li의 정렬된 목록<ol: ordered list>이나 정렬되지 않은 목록<ul: unordered list>을 설정함
    * ol 속성:
      - 필수 속성 없음
      - start : 항목에 매겨지는 번호의 시작 값 / 숫자(Number)
      - type : 항목에 매겨지는 번호의 유형 / a, A, i 등
    * ul 속성: 없음
    * li 속성:
-     - value : 항목의 순서를 결정 / 숫자(Number) \*\*\*
-   * <ol>, <ul> 은 자식으로 <li>만 가능
-       + <li>은 단독으로 사용 할 수 없음
-       + <ol>의 항목 순서는 중요도를 의미할 수 있음
+     - value : 항목의 순서를 결정 / 숫자(Number)
+   * ol, ul 은 자식으로 li만 가능
+     - li은 단독으로 사용 할 수 없음
+     - ol의 항목 순서는 중요도를 의미할 수 있음
 
 6. section / nav / header / footer / article
 
    - **block**
 
-   * <section>은 문서의 일반적인 영역을 설정함. 웹 문서 내에서 절단위로 구분하거나 의미가 비슷한 그룹으로 문서 구분할 때 사용
-       + 일반적으로 <article> 요소로 표현된 하나의 글은 여러 개의 <section> 그룹으로 구성할 수 있음
-   * <header> 문서에서 페이지 혹은 섹션의 머리말 영역을 나타낼 때 사용함.
-       + (보통 로고, 웹 문서 제목, 소개, 검색 등을 포함)
-   * <footer> 문서의 꼬리말에 해당하는 영역
-       + (보통 저자 정보, 저작권 정보, 관련 링크 등을 포함)
-   * <article> 독립적으로 구분되거나 재사용 가능한 영역을 설정함
-       + (매거진, 신문기사, 블로그 등)
-   * <nav> 다른 페이지 링크를 제공하는 영역을 설정함
-       + (navigation, 보통 메뉴, 목차, 색인 등을 설정)
+   * section은 문서의 일반적인 영역을 설정함. 웹 문서 내에서 절단위로 구분하거나 의미가 비슷한 그룹으로 문서 구분할 때 사용
+     - 일반적으로 article 요소로 표현된 하나의 글은 여러 개의 section 그룹으로 구성할 수 있음
+   * header 문서에서 페이지 혹은 섹션의 머리말 영역을 나타낼 때 사용함.
+     - (보통 로고, 웹 문서 제목, 소개, 검색 등을 포함)
+   * footer 문서의 꼬리말에 해당하는 영역
+     - (보통 저자 정보, 저작권 정보, 관련 링크 등을 포함)
+   * article 독립적으로 구분되거나 재사용 가능한 영역을 설정함
+     - (매거진, 신문기사, 블로그 등)
+   * nav 다른 페이지 링크를 제공하는 영역을 설정함
+     - (navigation, 보통 메뉴, 목차, 색인 등을 설정)
 
-7. img:
+7. img
 
    - **inline-block**
 
@@ -86,20 +86,22 @@
      - alt: 이미지 가져오는데 실패했을 경우 대체 텍스트를 명시
      - width, height: 각각 이미지의 너비와 높이를 명시
 
-8. meta:
+8. meta
 
    - 해당 문서에 대한 정보인 메타데이터를 정의할 때 사용
-   - <head>요소 내부에 위치
+   - head요소 내부에 위치
    - 속성
      - charset: 해당 문서의 문자 인코딩 방식을 명시
      - name: 메타데이터를 위한 이름을 명시
      - content: name 속성이나 http-equiv 속성과 관련된 값을 명시
-     - 검색 엔진을 위한 키워드 정의 예시: <meta name="keyword" content="HTML, meta, tag, element, reference">
-     - 웹 페이지에 대한 설명을 정의하는 예시: <meta name="description" content="HTML meta tag page">
+     - 검색 엔진을 위한 키워드 정의 예시:
+       |<meta name="keyword" content="HTML, meta, tag, element, reference"|>
+     - 웹 페이지에 대한 설명을 정의하는 예시:
+       |<meta name="description" content="HTML meta tag page"|>
 
 9. table / 자식요소: tr, th, td
    - table : table
    - tr: table-row
    - th, td: table-cell
-   * <table>태그는 데이터를 포함한 셀들의 행과 열로 구성된 테이블 정의, <tr>은 테이블의 각 행을 정의, <th>는 각 열의 제목을 정의, <td>는 하나의 테이블 셀을 정의함
-   * <caption>,<thead>,<tfoot>,<tbody>요소 사용하여 테이블을 구분할 수 있음
+   * table태그는 데이터를 포함한 셀들의 행과 열로 구성된 테이블 정의, tr은 테이블의 각 행을 정의, th는 각 열의 제목을 정의, td는 하나의 테이블 셀을 정의함
+   * caption,thead,tfoot,tbody요소 사용하여 테이블을 구분할 수 있음
