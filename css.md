@@ -1,6 +1,6 @@
 # 2WEEKS CSS
 
-1. flex : 엘리먼트들의 크기나 위치를 쉽게 잡아주는 도구
+#### 1. flex : 엘리먼트들의 크기나 위치를 쉽게 잡아주는 도구
 
 - flex를 사용하기 위해 컨테이너 태그에서 display: flex 속성 부여
 - 정렬방향 flex-direction 바꾸기 (기본 row)
@@ -58,14 +58,14 @@
        - z축으로 정렬가능
        - 숫자값(큰 숫자일 수록 위에 배치, 기본값이 0므로, 1만 설정해도 나머지 아이템 보다 위로 올라옴)
 
-2. position : html 요소가 위치를 결정하는 방식 설정, 정적위치 지정 방식을 제외한 나머지 다른 방식들은 전부 어떤 기준에 대해 해당 요소의 상대적인 위치를 설정하는 방식임.
+#### 2. position : html 요소가 위치를 결정하는 방식 설정, 정적위치 지정 방식을 제외한 나머지 다른 방식들은 전부 어떤 기준에 대해 해당 요소의 상대적인 위치를 설정하는 방식임.
 
-   1. static: 기본값, 단순히 웹 페이지의 흐름에 따라 차례대로 요소들을 위치시킴, 위치를 지정하지 않을 때와 같음
-      - 앞에 설정된 position을 무시할 때 사용
-      - top, bottom, left, right 속성값 영향x
-   2. relative: 해당 html요소의 기본위치(static일 때의 위치)를 기준으로 위치를 계산하여 설정함.
-      - top, bottom, left, right 위치 설정
-   3. absolute: relative와 달리 문서의 위치와 상관없이 위치를 지정가능, 가장 가까운 상위 요소를 기준으로 위치 결정 (상위 요소가 없으면 위치는 html body요소 기준으로 설정)
-   4. fixed: 뷰포트(viewport)를 기준으로 위치를 설정
-      - 웹 페이지가 스크롤 되어도 고정 위치로 지정된 요소는 항상 같은 곳에 위치
-      - position 속성: position(앞에 기술한 내용), top, right, bottom, left, z-index, overflow(내용의 크기가 해당 요소의 박스를 넘어갈 때 어떻게 처리할지를 설정)
+1.  static: 기본값, 단순히 웹 페이지의 흐름에 따라 차례대로 요소들을 위치시킴, 위치를 지정하지 않을 때와 같음
+    - 앞에 설정된 position을 무시할 때 사용
+    - top, bottom, left, right 속성값 영향x
+2.  relative: 해당 html요소의 기본위치(static일 때의 위치)를 기준으로 위치를 계산하여 설정함.
+    - top, bottom, left, right 위치 설정
+3.  absolute: relative와 달리 문서의 위치와 상관없이 위치를 지정가능, 가장 가까운 상위 요소를 기준으로 위치 결정 (상위 요소가 없으면 위치는 html body요소 기준으로 설정)
+4.  fixed: 뷰포트(viewport)를 기준으로 위치를 설정
+    - 웹 페이지가 스크롤 되어도 고정 위치로 지정된 요소는 항상 같은 곳에 위치
+    - position 속성: position(앞에 기술한 내용), top, right, bottom, left, z-index, overflow(내용의 크기가 해당 요소의 박스를 넘어갈 때 어떻게 처리할지를 설정)
