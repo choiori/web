@@ -4,7 +4,7 @@
 
 - **git init**: 저장소 생성
 - **git add (filename)**: 저장소에 파일 추가
-  - git add\* -> 두 가지 이상의 변동 내용을 한번에 적용
+  - git add. -> 두 가지 이상의 변동 내용을 한번에 적용
 - **git commit**: 저장소에 변경 내용을 반영
   - git add는 추가만 한 것임.(초록색 글씨로 표시) -> git commit으로 추가한 상태를 확정할 필요가 있음
 - **git status**: 저장소의 상태 확인
